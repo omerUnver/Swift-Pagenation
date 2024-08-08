@@ -28,7 +28,6 @@ class PagenationService : ObservableObject {
                 completion(.failure(.veriIslenemedi))
             }
             
-            
         }
         .resume()
         

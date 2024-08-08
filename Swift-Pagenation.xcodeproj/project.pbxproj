@@ -14,6 +14,10 @@
 		0F8913462C62743D00F2ED82 /* PagenationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8913452C62743D00F2ED82 /* PagenationListViewModel.swift */; };
 		0F8913482C62744800F2ED82 /* PagenationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8913472C62744800F2ED82 /* PagenationModel.swift */; };
 		0F89134A2C62745700F2ED82 /* PagenationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8913492C62745700F2ED82 /* PagenationService.swift */; };
+		0F8913702C64DAED00F2ED82 /* AsyncAwaitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F89136F2C64DAED00F2ED82 /* AsyncAwaitViewModel.swift */; };
+		0F8913732C64DB0700F2ED82 /* AsyncAwaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8913722C64DB0700F2ED82 /* AsyncAwaitView.swift */; };
+		0F8913762C64DB1C00F2ED82 /* AsyncAwaitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8913752C64DB1C00F2ED82 /* AsyncAwaitModel.swift */; };
+		0F8913792C64DB3D00F2ED82 /* AsyncAwaitDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8913782C64DB3D00F2ED82 /* AsyncAwaitDataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,11 @@
 		0F8913452C62743D00F2ED82 /* PagenationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagenationListViewModel.swift; sourceTree = "<group>"; };
 		0F8913472C62744800F2ED82 /* PagenationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagenationModel.swift; sourceTree = "<group>"; };
 		0F8913492C62745700F2ED82 /* PagenationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagenationService.swift; sourceTree = "<group>"; };
+		0F89136A2C64C8E400F2ED82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0F89136F2C64DAED00F2ED82 /* AsyncAwaitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitViewModel.swift; sourceTree = "<group>"; };
+		0F8913722C64DB0700F2ED82 /* AsyncAwaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitView.swift; sourceTree = "<group>"; };
+		0F8913752C64DB1C00F2ED82 /* AsyncAwaitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitModel.swift; sourceTree = "<group>"; };
+		0F8913782C64DB3D00F2ED82 /* AsyncAwaitDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitDataRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,8 @@
 		0F8913332C6273FF00F2ED82 /* Swift-Pagenation */ = {
 			isa = PBXGroup;
 			children = (
+				0F89136D2C64DAC000F2ED82 /* AsyncAwait + Pagenation */,
+				0F89136A2C64C8E400F2ED82 /* Info.plist */,
 				0F89135D2C63931400F2ED82 /* PagenationGroup */,
 				0F8913342C6273FF00F2ED82 /* Swift_PagenationApp.swift */,
 				0F8913382C62740100F2ED82 /* Assets.xcassets */,
@@ -106,6 +117,49 @@
 				0F8913422C62741C00F2ED82 /* ViewModel */,
 			);
 			path = PagenationGroup;
+			sourceTree = "<group>";
+		};
+		0F89136D2C64DAC000F2ED82 /* AsyncAwait + Pagenation */ = {
+			isa = PBXGroup;
+			children = (
+				0F8913772C64DB2C00F2ED82 /* AsyncAwaitDataRepository */,
+				0F8913742C64DB0C00F2ED82 /* AsyncAwaitModel */,
+				0F8913712C64DAF900F2ED82 /* AsyncAwaitView */,
+				0F89136E2C64DADA00F2ED82 /* AsyncAwaitViewModel */,
+			);
+			path = "AsyncAwait + Pagenation";
+			sourceTree = "<group>";
+		};
+		0F89136E2C64DADA00F2ED82 /* AsyncAwaitViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F89136F2C64DAED00F2ED82 /* AsyncAwaitViewModel.swift */,
+			);
+			path = AsyncAwaitViewModel;
+			sourceTree = "<group>";
+		};
+		0F8913712C64DAF900F2ED82 /* AsyncAwaitView */ = {
+			isa = PBXGroup;
+			children = (
+				0F8913722C64DB0700F2ED82 /* AsyncAwaitView.swift */,
+			);
+			path = AsyncAwaitView;
+			sourceTree = "<group>";
+		};
+		0F8913742C64DB0C00F2ED82 /* AsyncAwaitModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F8913752C64DB1C00F2ED82 /* AsyncAwaitModel.swift */,
+			);
+			path = AsyncAwaitModel;
+			sourceTree = "<group>";
+		};
+		0F8913772C64DB2C00F2ED82 /* AsyncAwaitDataRepository */ = {
+			isa = PBXGroup;
+			children = (
+				0F8913782C64DB3D00F2ED82 /* AsyncAwaitDataRepository.swift */,
+			);
+			path = AsyncAwaitDataRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +237,10 @@
 				0F8913372C6273FF00F2ED82 /* PagenationHomeView.swift in Sources */,
 				0F8913352C6273FF00F2ED82 /* Swift_PagenationApp.swift in Sources */,
 				0F8913482C62744800F2ED82 /* PagenationModel.swift in Sources */,
+				0F8913762C64DB1C00F2ED82 /* AsyncAwaitModel.swift in Sources */,
+				0F8913732C64DB0700F2ED82 /* AsyncAwaitView.swift in Sources */,
+				0F8913702C64DAED00F2ED82 /* AsyncAwaitViewModel.swift in Sources */,
+				0F8913792C64DB3D00F2ED82 /* AsyncAwaitDataRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +377,7 @@
 				DEVELOPMENT_TEAM = GUT5CV78F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swift-Pagenation/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -352,6 +411,7 @@
 				DEVELOPMENT_TEAM = GUT5CV78F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swift-Pagenation/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

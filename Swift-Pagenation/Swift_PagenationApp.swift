@@ -11,7 +11,8 @@ import SwiftUI
 struct Swift_PagenationApp: App {
     var body: some Scene {
         WindowGroup {
-            PagenationHomeView()
+//            PagenationHomeView()
+            AsyncAwaitView()
         }
     }
 }
